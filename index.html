@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type ="text/javascript" src="d3.v4.js"></script>
+	<link rel="stylesheet" href="index.css"/>
+	<title>UK Map</title>
+</head>
+
+<body>
+<h1>AC50002 - Programming Languages for Data Engineering</h1>
+<h2>Assignment 1 - D3 Plotting</h2>
+
+<!--Slider-->
+<div class="slidecontainer" align="right">
+  <input type="range" min="1" max="100" value="10" class="slider" id="range1" list="tickmarks" align="center">
+  <p font-size: 14px>Towns: <span id="range2"></span></p>
+
+  <datalist id="tickmarks">
+  <option value="0"></option>
+  <option value="10"></option>
+  <option value="20"></option>
+  <option value="30"></option>
+  <option value="40"></option>
+  <option value="50"></option>
+  <option value="60"></option>
+  <option value="70"></option>
+  <option value="80"></option>
+  <option value="90"></option>
+  <option value="100"></option>
+</datalist>
+</div>
+
+<!--Refresh Page Button-->
+<div id="button1" align="right">
+<button onClick="window.location.reload();">Refresh Page</button></div>
+
+<!--Refresh Map Button-->
+<div id="button2" align="right">
+<button onClick="$("#map").load(location.href + "#map*","");">Refresh Map</button></div>
+
+<!--Map-->
+<div id="map"></div>
+
+<!--D3-->
+<script src="./d3.v4.js"></script>
+
+<!--JavaScript-->
+<script type ="text/javascript" src="index.js"></script>
+
+<footer>
+  <P align="right">Author: Shashini Peiris<br>
+  <a href="2499976@dundee.ac.uk">2499976@dundee.ac.uk</a></p>
+</footer>
+
+</body>
+</html>

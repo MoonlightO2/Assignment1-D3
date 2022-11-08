@@ -1,0 +1,94 @@
+body{
+background: linear-gradient(to right, #88e7ff, #3fd8ff, #daf7fe , #4fdcff , #1ed2ff , #a1ecff , #90e9ff , #c1f2fe);
+	height:100%;
+	margin:0;
+	font-family: Georgia, sans-serif;
+    font-size: 10px;
+}
+
+button {
+  background: #C0C0C0;
+  border: 0;
+  color: black;
+  font-weight: bold;
+  font-family: Georgia, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin: 2px;
+  height: 50px;
+  box-shadow: inset 0px -2px 1px rgba(0,0,0,0.8),
+  inset 0 2px 1px rgba(255,255,255,1);
+}
+
+button:hover {
+  background: gray;
+}
+
+.uk{
+	fill:#90ee90;
+    stroke:#999;
+    stroke-width:0.5;
+}
+
+.subunit.SCT { fill: #ddc; }
+.subunit.WLS { fill: #cdd; }
+.subunit.NIR { fill: #cdc; }
+.subunit.ENG { fill: #dcd; }
+.subunit.IRL { display: none; }
+
+.uktowns{
+    stroke-width: 1px;
+    background-repeat: no-repeat;
+	width: 10px;
+}
+
+.ukcity{
+    fill:black;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #C0C0C0;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 30px;
+  border-radius: 50%; 
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+footer{
+  display: block;
+  font-family: Georgia, sans-serif;
+  font-size: 18px;
+}
